@@ -15,7 +15,7 @@ let gb = 0
 let cc = 0     
 let sugar = 0  
 let total = gb + cc + sugar
-
+let minimumQty = 0
 // let gingerBreadTotal = document.querySelector('#qty-gb')
 // gingerBreadTotal.textContent = gb
 
@@ -37,12 +37,14 @@ document.getElementById('add-gb').addEventListener('click', function() {
     document.querySelector('#qty-gb').textContent = gb + 1
     gb++ 
     document.getElementById("qty-total").textContent =  gb + cc + sugar
+    // while (gb <= minimumQty)
     console.log(gb)
 })
 document.getElementById('minus-gb').addEventListener('click', function() {
     document.querySelector('#qty-gb').textContent = gb - 1
     gb--
     document.getElementById("qty-total").textContent =  gb + cc + sugar
+
     console.log(gb)
 })
 
